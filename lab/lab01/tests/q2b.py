@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2b',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> elementwise_array_sum([], [])\narray([], dtype=float64)', 'hidden': False, 'locked': False},

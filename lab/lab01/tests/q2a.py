@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2a',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> summation(1)\n4', 'hidden': False, 'locked': False},
