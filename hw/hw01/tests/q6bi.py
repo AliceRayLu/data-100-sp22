@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q6bi',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> len(q6bi_su) == len(weight_lifted)\nTrue', 'hidden': False, 'locked': False},
