@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> fruit_info_original.shape\n(4, 3)', 'hidden': False, 'locked': False},

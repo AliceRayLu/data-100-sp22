@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q6c',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> major_party_results_since_1988.shape \n(40, 6)', 'hidden': False, 'locked': False},

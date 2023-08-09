@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> name_and_year.shape\n(6215834, 2)', 'hidden': False, 'locked': False},

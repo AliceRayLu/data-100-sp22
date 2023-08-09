@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q6a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> len(best_result_percentage_only)\n15', 'hidden': False, 'locked': False},

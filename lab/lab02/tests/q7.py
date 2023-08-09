@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q7',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> elections_with_first_name.shape\n(182, 7)', 'hidden': False, 'locked': False},

@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1b',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> fruit_info["rank2"].dtype\ndtype(\'int64\')', 'hidden': False, 'locked': False},

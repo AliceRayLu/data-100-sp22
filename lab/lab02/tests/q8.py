@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q8',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> presidential_candidates_and_name_popularity.shape\n(153, 9)', 'hidden': False, 'locked': False},
