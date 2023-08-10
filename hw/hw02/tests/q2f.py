@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2f',
     'points': 2,
     'suites': [   {   'cases': [   {'code': ">>> assert 'postal5' in bus.columns\n>>> (bus['postal5'].str.len() != 5).sum() == 221\nTrue", 'hidden': False, 'locked': False},

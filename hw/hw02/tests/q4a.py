@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4a',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> "name" in ins_named and "address" in ins_named\nTrue', 'hidden': False, 'locked': False},

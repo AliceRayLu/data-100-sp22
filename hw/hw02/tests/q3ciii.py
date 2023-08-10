@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3ciii',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> type(earliest_date) == pd.Timestamp\nTrue', 'hidden': False, 'locked': False},
