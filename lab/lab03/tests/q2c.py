@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2c',
     'points': None,
     'suites': [   {   'cases': [   {   'code': '>>> import matplotlib \n'

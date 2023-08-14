@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> calls_lat_lon.shape\n(2632, 2)', 'hidden': False, 'locked': False},
