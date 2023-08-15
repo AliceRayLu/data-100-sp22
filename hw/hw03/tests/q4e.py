@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4e',
     'points': 2,
     'suites': [   {   'cases': [   {   'code': '>>> assert all(not isinstance(df.index, pd.MultiIndex) for df in mentions.values())\n'

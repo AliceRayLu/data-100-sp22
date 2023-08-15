@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2b',
     'points': 2,
     'suites': [   {   'cases': [   {'code': ">>> re.findall(q2b_pattern, test_str) == ['Twitter for iPhone']\nTrue", 'hidden': False, 'locked': False},

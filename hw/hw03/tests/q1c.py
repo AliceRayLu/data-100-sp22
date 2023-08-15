@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1c',
     'points': 3,
     'suites': [   {   'cases': [   {   'code': '>>> assert set(tweets.keys()) == {"AOC", "Cristiano", "elonmusk"}\n>>> assert all(df.index.name == "id" for df in tweets.values())\n',

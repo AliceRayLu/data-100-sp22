@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4f',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> set(aoc_mention_polarity.index) == set(mentions["AOC"]["mentions"])\nTrue', 'hidden': False, 'locked': False},

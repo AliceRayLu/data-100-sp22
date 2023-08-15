@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2d',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> most_freq(tweets["Cristiano"][\'device\'])["Twitter for iPhone"] == 1183\nTrue', 'hidden': False, 'locked': False},

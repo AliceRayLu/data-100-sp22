@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3a',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> all("hour" in df.columns for df in tweets.values())\nTrue', 'hidden': False, 'locked': False},

@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4ci',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> isinstance(punct_re, str)\nTrue', 'hidden': False, 'locked': False},
