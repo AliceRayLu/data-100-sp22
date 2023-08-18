@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1c',
     'points': 2,
     'suites': [   {   'cases': [   {'code': ">>> np.round(daily_counts['casual'].mean())\n848.0", 'hidden': False, 'locked': False},
