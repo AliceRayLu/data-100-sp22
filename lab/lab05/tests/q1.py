@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> squared_loss(2, 1)\n1', 'hidden': False, 'locked': False},

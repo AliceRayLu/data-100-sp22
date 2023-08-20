@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q7',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> np.isclose(mae_tips_constant(5.3), 2.4527868852459016)\nTrue', 'hidden': False, 'locked': False},
