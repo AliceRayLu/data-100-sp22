@@ -157,13 +157,11 @@ For this problem, assume we are working with the \textbf{simple linear regressio
 \textit{Hint:} Recall, we define the residual vector as $e = \Bbb{Y} - \Bbb{\hat{Y}}$, and $e = [e_1, e_2, ..., e_n]^T$.
     \begin{shaded}
     \begin{answer}
-
-        \begin{equation*}
-            \begin{split}
-                \sum_{i=1}^{n}e_i &=\sum_{i=1}^{n}(y_i-\hat{\theta_0}-\hat{\theta_1}x_i)\\
-                & = 0 \space\text{, inferred from 1(a)}
-            \end{split}
-        \end{equation*}
+        Known from lecture, from the normal equation:
+        \[\hat{\theta} = (\Bbb{X}^T\Bbb{X})^{-1}\Bbb{X}^T\Bbb{Y}\]
+        So, we can conclude that:
+        \[e = \Bbb{Y}-\Bbb{X}\hat{\theta} = \Bbb{Y}-\Bbb{X}\Bbb{X}^{-1}\Bbb{X}^{-T}\Bbb{X}^T\Bbb{Y}=\vec{0}\]
+        this means every $e_i$ is 0, so $\sum\limits_{i=1}^n e_i = 0$
 
     \end{answer}
     \end{shaded}
@@ -173,11 +171,7 @@ For this problem, assume we are working with the \textbf{simple linear regressio
     \begin{shaded}
     \begin{answer}
 
-        \begin{equation*}
-            \begin{split}
-                \vec{e}^T\cdot\vec{x} = \sum_{i=1}^{n}e_ix_i = 
-            \end{split}
-        \end{equation*}
+        from $2a$ we know that $\vec{e}$ is $\vec{0}$, so $\vec{x}^T\cdot\vec{e} = 0$
 
     \end{answer}
     \end{shaded}
@@ -188,7 +182,7 @@ For this problem, assume we are working with the \textbf{simple linear regressio
     \begin{shaded}
     \begin{answer}
 
-% YOUR ANSWER HERE %
+        same as $2b$
 
     \end{answer}
     \end{shaded}
@@ -222,7 +216,7 @@ Note: This is the slope of our regression line, analogous to $\hat{\theta_1}$ fr
     \begin{shaded}
     \begin{answer}
 
-% YOUR ANSWER HERE %
+        \[\frac{\mathrm{d} R(\gamma)}{\mathrm{d} \gamma} = \frac{2\gamma}{n}\sum_{i=1}^{n}x_i^2-\frac{2}{n}\sum_{i=1}^{n}x_iy_i = 0\]
 
     \end{answer}
     \end{shaded}
@@ -244,9 +238,7 @@ Earlier in this homework, we established several properties that held true for t
 \part[2] $\sum\limits_{i = 1}^n e_i = 0$.
     \begin{shaded}
     \begin{answer}
-
-% YOUR ANSWER HERE %
-
+        
     \end{answer}
     \end{shaded}
 
@@ -255,8 +247,8 @@ Earlier in this homework, we established several properties that held true for t
 
     \begin{shaded}
     \begin{answer}
-
-% YOUR ANSWER HERE %
+        Like linear regression with intercept,
+        the span(x) and e is orthogonal
 
     \end{answer}
     \end{shaded}

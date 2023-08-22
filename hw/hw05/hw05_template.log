@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.16)  21 AUG 2023 16:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.16)  22 AUG 2023 10:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,7 +397,7 @@ This exam has a total of 0 bonus points.
 Here is how much of TeX's memory you used:
  5976 strings out of 476919
  84874 string characters out of 5818256
- 602158 words of memory out of 5000000
+ 601158 words of memory out of 5000000
  25901 multiletter control sequences out of 15000+600000
  410090 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
