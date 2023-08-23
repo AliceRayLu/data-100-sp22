@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3c',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> np.isclose(mean_predicted_mpg_hp_only, np.mean(predicted_mpg_hp_only), atol=0.001)\nTrue', 'hidden': False, 'locked': False},

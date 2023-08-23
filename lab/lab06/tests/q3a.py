@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> np.isclose(model_multi.intercept_, 56.900099702112954)\nTrue', 'hidden': False, 'locked': False},
