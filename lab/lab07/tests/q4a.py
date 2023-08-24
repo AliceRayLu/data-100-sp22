@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4a',
     'points': 3,
     'suites': [   {   'cases': [   {'code': ">>> x, y = df['x'], df['y']\n>>> abs(sin_MSE([0, np.pi], x, y) - 19.49000412080223) <= 1e-5\nTrue", 'hidden': False, 'locked': False},

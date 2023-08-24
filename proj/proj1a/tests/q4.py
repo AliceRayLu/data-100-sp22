@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> training_data.shape[0] # Make sure that two observations were removed\n168931', 'hidden': False, 'locked': False},

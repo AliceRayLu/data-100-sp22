@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2b',
     'points': 1,
     'suites': [   {   'cases': [   {'code': ">>> (('Sale Price' in training_data.columns) == True) and (('Log Sale Price' in training_data.columns) == True)\nTrue", 'hidden': False, 'locked': False},
