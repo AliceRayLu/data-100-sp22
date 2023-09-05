@@ -10,4 +10,4 @@ hw/hw04/data
 !proj/proj2b/spam_ham_data.zip
 proj/proj1a/*.csv
 .OTTER_LOG
-_pycache_
+**/__pycache__/
