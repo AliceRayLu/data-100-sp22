@@ -11,3 +11,6 @@ hw/hw04/data
 proj/proj1a/*.csv
 .OTTER_LOG
 **/__pycache__/
+*.aux
+*.log
+*.synctex.gz
