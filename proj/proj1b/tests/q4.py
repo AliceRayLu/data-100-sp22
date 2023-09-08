@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> np.isclose(y_fitted_m1.max(), 17.528601849438104, atol=0.0001) == True\nTrue', 'hidden': False, 'locked': False},

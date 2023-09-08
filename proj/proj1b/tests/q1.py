@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> train.shape == (163833, 62) # train should contain 80% of the data\nTrue', 'hidden': False, 'locked': False},

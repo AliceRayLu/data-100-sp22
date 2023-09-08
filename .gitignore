@@ -14,3 +14,4 @@ proj/proj1a/*.csv
 *.aux
 *.log
 *.synctex.gz
+proj/proj1b/*.csv

@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q3',
     'points': 3,
     'suites': [   {   'cases': [   {   'code': '>>> (type(X_train_m1) in (np.ndarray, pd.core.frame.DataFrame)) and \\\n'

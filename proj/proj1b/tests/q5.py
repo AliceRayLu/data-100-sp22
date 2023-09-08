@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q5',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> (training_error_m1 > 0) and (test_error_m1 > 0) == True\nTrue', 'hidden': False, 'locked': False},

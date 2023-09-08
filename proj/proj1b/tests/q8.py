@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q8',
     'points': 3,
     'suites': [   {   'cases': [   {   'code': ">>> run_linear_regression_test(lm.LinearRegression(fit_intercept=True), process_data_fm, 200000, 'cook_county_train.csv', None, False)\nTrue",
