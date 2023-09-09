@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> len(sample_maxes) == 5000\nTrue', 'hidden': False, 'locked': False},
