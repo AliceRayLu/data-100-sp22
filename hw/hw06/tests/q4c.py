@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4c',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> len(cis) == 6 and all(len(ci) == 2 for ci in cis)\nTrue', 'hidden': False, 'locked': False},

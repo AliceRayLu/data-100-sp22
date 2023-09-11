@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4a',
     'points': 5,
     'suites': [   {   'cases': [   {'code': '>>> all([len(df_i) == len(mask_data) for df_i in bootstrap_sample(mask_data, 1)])\nTrue', 'hidden': False, 'locked': False},

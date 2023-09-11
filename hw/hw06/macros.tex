@@ -1,0 +1,123 @@
+% Set up gsi notes environment
+% Use \toggletrue{gsinotes} to print instructor notes
+\usepackage{etoolbox,environ, xcolor}
+
+\CorrectChoiceEmphasis{\color{red}}
+\newtoggle{gsinotes}
+\NewEnviron{gsi}
+{\iftoggle{gsinotes}{\color{blue} Staff Notes: \BODY}{}}
+
+% Header
+\newcommand{\lecture}[4]{
+    \def \printtitle {
+    \ifprintanswers
+    #1~Solutions
+    \else
+    #1
+    \fi
+    }
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf Data 100, Spring 2022
+						\hfill #4} }
+				\vspace{6mm}
+				\hbox to 6.28in { {\Large \hfill \printtitle{}  \hfill}  }
+				\vspace{6mm}
+				\hbox to 6.28in { {\it  #2 \hfill #3} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{#1}{#1}
+	%\vspace*{-2mm}
+}
+
+% True/false choices
+\newcommand*{\TrueFalse}[1]{%
+\ifprintanswers
+    \ifthenelse{\equal{#1}{T}}{%
+        \textbf{TRUE}\hspace*{14pt}False
+    }{
+        True\hspace*{14pt}\textbf{FALSE}
+    }
+\else
+    {True}\hspace*{20pt}False
+\fi
+} 
+%% The following code is based on an answer by Gonzalo Medina
+%% https://tex.stackexchange.com/a/13106/39194
+\newlength\TFlengthA
+\newlength\TFlengthB
+\settowidth\TFlengthA{\hspace*{1.16in}}
+\newcommand\TFQuestion[2]{%
+    \setlength\TFlengthB{\linewidth}
+    \addtolength\TFlengthB{-\TFlengthA}
+    \parbox[t]{\TFlengthA}{\TrueFalse{#1}}\parbox[t]{\TFlengthB}{#2}}
+
+\newenvironment{selectone}
+    {
+    \renewcommand\choicelabel{$\bigcirc$ \Alph{choice}.}
+    \begin{choices}
+    }
+    {
+    \end{choices}
+    \renewcommand\choicelabel{\Alph{choice}.}
+    }
+
+
+\newenvironment{selectall}
+    {
+    \renewcommand\choicelabel{$\Box$ \Alph{choice}.}
+    \begin{choices}
+    } 
+    {
+    \end{choices}
+    \renewcommand\choicelabel{\Alph{choice}.}
+    }
+
+% Multiple choice on one line
+\newenvironment{selectoneoneline}
+    {
+    \vspace{0.8em}
+    \renewcommand\choicelabel{$\bigcirc$ \Alph{choice}.}
+    \begin{oneparchoices}
+    }
+    {
+    \end{oneparchoices}
+    \renewcommand\choicelabel{\Alph{choice}.}
+    \vspace{0.8em}
+    }
+
+\newenvironment{selectalloneline}
+    {
+    \vspace{0.8em}
+    \renewcommand\choicelabel{$\Box$ \Alph{choice}.}
+    \begin{oneparchoices}
+    }
+    {
+    \end{oneparchoices}
+    \renewcommand\choicelabel{\Alph{choice}.}
+    \vspace{0.8em}
+    }
+
+% Some statistical notation for the class
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\ev}[1]{\E\left\lbrack #1 \right\rbrack}
+\newcommand{\bbp}{\mathbb{P}}
+\newcommand{\pr}[1]{\bbp \left( #1 \right)}
+\newcommand{\given}[1][]{\:#1\vert\:}
+\newcommand{\condpr}[2]{\bbp \left( #1 \given #2 \right) }
+\newcommand{\hatcondpr}[2]{\hat\bbp \left( #1 \given #2 \right) }
+
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\var}{var}
+\DeclareMathOperator*{\cov}{cov}
+\DeclareMathOperator*{\sgn}{sgn}
+
+\newcommand{\norm}[1]{\left\lVert #1 \right\lVert}

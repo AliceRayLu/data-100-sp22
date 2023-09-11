@@ -1,0 +1,159 @@
+% DS100: Search for YOUR ANSWER HERE in this LaTeX document. Then (if using Overleaf) press "Recompile" or Ctrl/Cmd+S.
+% To download a file, select the download button next to "Recompile"
+% http://mirrors.concertpass.com/tex-archive/macros/latex/contrib/exam/examdoc.pdf
+
+\documentclass[addpoints, 12pt]{exam}
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{multicol}
+\input{macros}
+
+\lstset{language=python, basicstyle=\ttfamily}
+\newcommand{\closedinterval}[2]{\left[#1, #2\right]}
+\setlength{\columnsep}{1cm}
+\setlength{\parskip}{1em}
+\usepackage{framed}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem*{answer}{Answer}
+
+
+\begin{document}
+
+
+\definecolor{shadecolor}{gray}{0.95}
+\newcommand{\homework}{6}
+\newcommand{\duedate}{Thursday, March 31st at 11:59 PM Pacific}
+\lecture{Homework \#\homework{} Written Question}{}{Due Date: \duedate{}}{}
+
+\noindent\textbf{Total Points: 13}
+
+\fullwidth{\section*{Submission Instructions (Written Only)}}
+\noindent Question 1 in this document is a written problem and should be submitted as a separate PDF to the Written portal of Gradescope. You must submit this assignment to Gradescope by \textbf{\duedate{}}. While Gradescope accepts late submissions, you will not receive \textbf{any} credit for a late submission if you do not have prior accommodations (e.g. DSP).
+
+\noindent You can work on this assignment in any way you like: (1) Download this PDF, print it out, and write directly on these pages (we've provided enough space for you to do so); (2) If you have a tablet, you could save this PDF and write directly on it; (3) Use some form of LaTeX. Overleaf is a great tool; visit the course website for a LaTeX template of this homework; or (4) Write your answers on a blank sheet of paper.
+
+\noindent Regardless of what method you choose, the end result needs to end up on Gradescope, as a PDF. If you wrote something on physical paper (like options 1 and 3 above), you will need to use a scanning application (e.g. CamScanner) in order to submit your work. 
+
+\noindent When submitting on Gradescope, you \textbf{must correctly assign pages to each question} (it prompts you to do this after submitting your work). This significantly streamlines the grading process for our tutors. Failure to do this may result in a score of 0 for any questions that you didn't correctly assign pages to. If you have any questions about the submission process, please don't hesitate to ask on EdStem.
+\vspace*{1em}
+
+\newpage
+\fullwidth{\section*{Collaborators and Content Warning}}
+\noindent Data science is a collaborative activity. While you may talk with others about the homework, we ask that you write your solutions individually. If you do discuss the assignments with others please include their names at the top of your coding submission.
+
+\noindent This assignment includes an analysis of daily COVID-19 cases by U.S. county through 2021. If you feel uncomfortable with this topic, please contact your GSI or the instructors.
+
+\newpage
+
+\fullwidth{\section{Random Variables: COVID-19}}
+
+
+\noindent In this homework, we analyze COVID-19 case counts over time. Before diving into the coding notebook, we will perform some initial analysis using properties of random variables, like expectation and variance.
+
+\noindent Consider the COVID-19 infection and recovery cases from a start date of March 1, 2021. Define day $i$ in the range $[0, 365]$, inclusive, to be the number of days since this start date, and define the following:
+
+\begin{itemize}
+    \item $C_i$, a random variable for the number of new cases on Day $i$. Let $p_{c,i}$ be the probability of infection for an uninfected person on Day $i$; a value; assume $p_{c,i}$ is known for all $i$.
+    \item $R_i$, a random variable the number of newly recovered cases on Day $i$. Let $p_{r,i}$ be the probability of recovery for an infected person on Day $i$; a value; assume $p_{r,i}$ is known for all $i$.
+    \item $n$ is the population of the world; a value.
+\end{itemize}
+
+\noindent Assume that (1) everyone who has recovered from COVID-19 will not be reinfected and/or re-recover, and (2) the population of the world $n$ is a fixed value for all days $i$. In practice neither of these assumptions hold, but they greatly simplify our computations below.
+
+%\question 
+\begin{parts}
+
+%%%%%%%%%%%%%%%%%% 1(a)
+\part[2] Consider the random variable $C_i$ for a particular day $i$. Note that $C_i$ is not a Binomial random variable because trials are not independent; two people in close proximity to an infected individual are more likely to get infected together.
+
+However, $C_i$ can still be defined a sum of $n$ Bernoulli random variables as follows: For each of the $n$ individuals in the world, count $1$ if the individual is infected (with probability $p_{c,i}$), and $0$ otherwise. Compute the expectation $E[C_i]$.
+    \begin{shaded}
+    \begin{answer}
+
+        $$ E[C_i]=\sum_{k=1}^{n}kC_n^k p_{c,i}^k (1-p_{c,i})^{n-k}$$
+
+    \end{answer}
+    \end{shaded}
+
+%%%%%%%%%%%%%%%%%% 1(b)
+\part[2]  Using the above definitions, write an expression to define a new variable $C$ in terms of existing variables, such that $C$ represents the total number of new COVID-19 cases from March 1, 2021 to March 1, 2022.
+
+    \begin{shaded}
+    \begin{answer}
+
+        $$ C = \sum_{i=0}^{365}C_i $$
+
+    \end{answer}
+    \end{shaded}
+    
+%%%%%%%%%%%%%%%%%% 1(c)
+\part[2] Compute the expectation of $C$, the variable you defined in part (b), $\mathbb{E}[C]$ in terms of $p_{c,i}$ for all $i$ in the range $[0, 365]$ and the population of the world, $n$.
+
+    \begin{shaded}
+    \begin{answer}
+
+        $$E[C] = \sum_{i=0}^{365}E[C_i] = \sum_{i=0}^{365}\sum_{k=1}^{n}kC_n^k p_{c,i}^k (1-p_{c,i})^{n-k}$$
+
+    \end{answer}
+    \end{shaded}
+
+%%%%%%%%%%%%%%%%%% 1(d)
+\part[2] Suppose we derive the variance of $C$ as  follows:
+$$
+\mathrm{Var}(C) = \sum_{i=1}^{365} \mathrm{Var}(C_i)
+$$
+What is a potential issue with this approach?
+
+    \begin{shaded}
+    \begin{answer}
+
+% YOUR ANSWER HERE %
+
+    \end{answer}
+    \end{shaded}
+
+%%%%%%%%%%%%%%%%%% 1(e)
+\part[2] Assume that for someone to be considered recovered on Day $i$ (i.e. part of $R_i$), they must test negative twice on that day. We can define $T_i$, the number of tests taken by recovered people on Day $i$ as $T_i = 2R_i$.
+
+Which of the following are true? Justify your answer.
+
+\begin{selectone}
+\choice We can compute the variance as $\mathrm{Var}(T_i) = 2\mathrm{Var}(R_i)$ \textbf{only if} $R_i$ is a Binomial random variable.
+\choice We can compute the variance as $\mathrm{Var}(T_i) = 4\mathrm{Var}(R_i)$ \textbf{only if} $R_i$ is a Binomial random variable.
+\choice We can compute the variance as $\mathrm{Var}(T_i) = 2\mathrm{Var}(R_i)$ regardless of what kind of random variable $R_i$ is.
+\correctchoice We can compute the variance as $\mathrm{Var}(T_i) = 4\mathrm{Var}(R_i)$ regardless of what kind of random variable $R_i$ is.
+\end{selectone}
+
+    \begin{shaded}
+    \begin{answer}
+
+        D
+
+    \end{answer}
+    \end{shaded}
+
+%%%%%%%%%%%%%%%%%% 1(f)
+\part[2] For a particular Day $i$, assume that the number of recovered individuals $R_i$ is a Binomial random variable, where $n$ is the population of the world and $p_{r,i}$ is the probability of an individual recovering on Day $i$. If $p_{r,i} = 0.5$, calculate $\mathrm{Var}(T_i)$ in terms of $n$.
+
+    \begin{shaded}
+    \begin{answer}
+
+        $$ Var(T_i) = 4Var(R_i) = 4np_{r,i}(1-p_{r,i}) = n $$
+
+    \end{answer}
+    \end{shaded}
+
+\end{parts}
+
+\newpage
+\end{document}
