@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q6b',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> np.all(df_numerical.applymap(lambda x: x in [0, 1]))\nTrue', 'hidden': False, 'locked': False},

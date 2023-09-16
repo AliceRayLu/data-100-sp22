@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2',
     'points': 3,
     'suites': [   {   'cases': [   {'code': '>>> res_q2.shape == (10, 2)\nTrue', 'hidden': False, 'locked': False},

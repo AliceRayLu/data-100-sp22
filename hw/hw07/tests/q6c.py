@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q6c',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> all(np.isclose(np.mean(df_standardized), [0] * df_standardized.shape[1]))\nTrue', 'hidden': False, 'locked': False},
