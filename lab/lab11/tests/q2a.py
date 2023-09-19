@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> iris_2d.shape == (150, 2)\nTrue', 'hidden': False, 'locked': False},

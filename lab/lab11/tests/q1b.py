@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1b',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> np.all(np.isclose(s1, np.array([20.92306556, 11.7091661 ,  4.69185798,  1.76273239])))\nTrue', 'hidden': False, 'locked': False},

@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4b',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> all(np.isclose([sum(u2[:, i] ** 2) for i in range(u2.shape[1])], [1, 1, 1]))\nTrue', 'hidden': False, 'locked': False},

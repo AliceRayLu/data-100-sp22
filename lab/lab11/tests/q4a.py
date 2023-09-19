@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4a',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> len(surfboard_mean) == 3\nTrue', 'hidden': False, 'locked': False},

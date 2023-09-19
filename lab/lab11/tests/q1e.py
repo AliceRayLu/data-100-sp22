@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1e',
     'points': 1,
     'suites': [   {   'cases': [   {'code': '>>> surfboard_pcs.shape == (1000, 3)\nTrue', 'hidden': False, 'locked': False},

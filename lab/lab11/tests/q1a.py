@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> iris_mean.size == 4\nTrue', 'hidden': False, 'locked': False},
