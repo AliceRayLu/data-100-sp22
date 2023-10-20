@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> len(lr_predict(theta_hat, X_intercept_train)) == len(Y_train)\nTrue', 'hidden': False, 'locked': False},

@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1a',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> lr_model(np.arange(-2,2), np.arange(1,5)) == 0.5\nTrue', 'hidden': False, 'locked': False},

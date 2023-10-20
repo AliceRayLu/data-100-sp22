@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1b',
     'points': None,
     'suites': [   {   'cases': [   {'code': '>>> np.isclose(lr_avg_loss(np.array([0, 0]), X_intercept_train, Y_train), 0.6931471805599453)\nTrue', 'hidden': False, 'locked': False},
