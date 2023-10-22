@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1b',
     'points': None,
     'suites': [   {   'cases': [   {'code': ">>> np.isclose(gini_impurity(nba_data['Pos3']), 0.6383398017253514)\nTrue", 'hidden': False, 'locked': False},

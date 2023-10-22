@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2c',
     'points': None,
     'suites': [   {   'cases': [   {'code': ">>> random_forest_model.criterion == 'entropy'\nTrue", 'hidden': False, 'locked': False},

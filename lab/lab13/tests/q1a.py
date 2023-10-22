@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q1a',
     'points': None,
     'suites': [   {   'cases': [   {'code': ">>> np.isclose(entropy(['G', 'G', 'F', 'F', 'C', 'C']), 1.584962500721156)\nTrue", 'hidden': False, 'locked': False},
