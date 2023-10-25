@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4c',
     'points': 2,
     'suites': [   {   'cases': [   {'code': '>>> list(design_matrix(test).sum())[10:15] == [290.0, 511.0, 699.0, 687.0, 683.0]\nTrue', 'hidden': False, 'locked': False},

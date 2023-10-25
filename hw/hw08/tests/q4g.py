@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q4g',
     'points': 4,
     'suites': [   {   'cases': [   {'code': '>>> 240 <= tree_rmse <= 245\nTrue', 'hidden': False, 'locked': False},
