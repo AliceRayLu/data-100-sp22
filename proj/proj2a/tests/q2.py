@@ -1,3 +1,4 @@
+OK_FORMAT = True
 test = {   'name': 'q2',
     'points': 3,
     'suites': [   {   'cases': [   {   'code': ">>> np.allclose(words_in_texts(['hello', 'bye', 'world'], \n"
